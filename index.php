@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,29 +44,33 @@ $objeto = new FarmaciaJogos();
         echo("Digite a opção desejada<br>");
         $objeto->escolha = $_POST("cliente");
 
-        if($objeto->escolha == 1)
-        {$objeto->CadastrarJogo (); }
+        if($objeto->escolha == 1){
+            $objeto->CadastrarJogo (); 
+        }
         else
         {
-            if($objeto->escolha == 2)
-            {$objeto->ConsultarJogo(); }
+            if($objeto->escolha == 2){
+                $objeto->ConsultarJogo(); 
+            }
         else
-            if($objeto->escolha == 3)
-            {$objeto->EditarJogo(); }
+            if($objeto->escolha == 3){
+                $objeto->EditarJogo(); 
+            }
         else
-            if($objeto->escolha == 4)
-            {$objeto->ExcluirJogo(); }
+            if($objeto->escolha == 4){
+                $objeto->ExcluirJogo(); 
+            }
         else
-            if($objeto->escolha == 5)
-            {$objeto->EmprestarJogo(); }
+            if($objeto->escolha == 5){
+                $objeto->EmprestarJogo(); 
+            }
         else 
-            if($objeto->escolha == 6)
-            {$objeto->AplicarMulta(); }
+            if($objeto->escolha == 6){
+                $objeto->AplicarMulta(); 
+            }
         }
 
 ?>
-
-
 
 
 </body>
