@@ -13,17 +13,22 @@
     <input type= "submit" name="enviar" id="enviar" value="enviar"><br>
 
 <?php
-class FarmaciaJogos
-{public $nome;
-public $escolha;
-function CadastrarJogo ()
-{echo("Cadastrado"); }
-function ConsultarJogo()
-{echo("Consultado"); }
-function EditarJogo ()
-{echo("Editado"); }
-function ExcluirLivro ()
-{echo ("Excluido"); }
+class FarmaciaJogos{
+    public $nome;
+    public $escolha;
+    
+    function CadastrarJogo (){
+        echo("Cadastrado"); 
+    }
+    function ConsultarJogo(){
+        echo("Consultado"); 
+    }
+    function EditarJogo (){
+        echo("Editado"); 
+    }
+    function ExcluirLivro (){
+        echo ("Excluido"); 
+    }
 
 }
 
@@ -58,8 +63,6 @@ $objeto = new FarmaciaJogos();
             if($objeto->escolha == 6)
             {$objeto->AplicarMulta(); }
         }
-    
-
 
 ?>
 
